@@ -1,0 +1,25 @@
+
+Antibio Dataset
+===============
+
+This dataset consists of DNA segments shared by a subset of Neisseria gonorrhoeae strains that are statistically associated with resistance to different antibiotics (azithromycin, cefixime, ciprofloxacin). Classifiers trained from these datasets will accelerate the assessment of potential antibiotic-resistant strains in samples, providing guidance for ongoing medication therapy.
+
+
+Columns
+=======
+
+Antibiotic resistance file:
+1: Sample_ID
+2-4: Whether or not the sample exhibits resistance
+
+Kmers files:
+These files come in transposed form, columns correspond to samples and rows correspond to DNA segments (kmers). Each 0/1 encodes if a sequence (or group of sequences) is absent/present in a sample.
+
+
+Files
+=====
+
+resist.csv
+kmers_azithromycin.tsv
+kmers_cefixime.tsv
+kmers_ciprofloxacin.tsv
